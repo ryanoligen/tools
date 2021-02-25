@@ -20,6 +20,15 @@ git status # 仓库当前状态
 ## 版本回退
 ```bash
 git diff git_command.md
+
+git log # 提交记录日志
+git log --pretty=oneline # 提交记录日志，一行显示
+git reflog # 每一次提交的记录
+
+git reset --hard HEAD^ # 退回上一个版本
+git reset --hard HEAD^^ # 退回两次以前的提交
+git reset --hard HEAD~5 # 退回五次以前的提交
+git reset --hard HEAD # 退回到提交编号为。。。的版本
 ```
 ## 远程仓库
 ## 分支管理

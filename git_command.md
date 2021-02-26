@@ -30,8 +30,16 @@ git reset --hard HEAD^ # 退回上一个版本
 git reset --hard HEAD^^ # 退回两次以前的提交
 git reset --hard HEAD~5 # 退回五次以前的提交
 git reset --hard 17fc52b # 退回到提交编号为17fc52b的版本
+
+
+git checkout -- git_command.md # 丢弃工作区的修改
 ```
 ## 远程仓库
+```bash
+git branch -M main
+git remote add origin git@github.com:ryanoligen/tools.git
+git push -u origin main
+```
 ## 分支管理
 ## 标签管理
 

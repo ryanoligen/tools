@@ -118,7 +118,9 @@ git stash apply # 恢复工作区的修改
 git stash apply stash@{0} # 恢复到stash@{0}
 git stash drop # 将stash的内容删除
 
-git cherry-pick commit_sha1 # 在当前分支上，将其他分支上的提交commit_sha1合并过来，会生成一个新的提交
+git cherry-pick <commit_sha1> # 在当前分支上，将其他分支上的提交commit_sha1合并过来，会生成一个新的提交
+
+git cherry-pick <commit-sha1>, <commit-sha2> # 可以将不同分支上的若干个提交合并到当前分支上，生成新的提交，内容一致
 
 git switch -c feature # 创建并切换到feature分支
 git switch main
